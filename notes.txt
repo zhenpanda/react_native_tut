@@ -1,0 +1,3 @@
+Start up code for initization:
+
+react-native init appname
