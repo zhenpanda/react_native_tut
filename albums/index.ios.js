@@ -5,10 +5,10 @@ import React from 'react';
 
 /* import ReactNative from 'react-native'; */
 // import destructing, so import targeted parts from library
-import { Text, AppRegistry } from 'react-native';
+import { Text, AppRegistry, View} from 'react-native';
 // component nesting
 import Header from './src/components/header';
-
+import AlbumList from './src/components/AlbumList';
 /*
 
 react
@@ -36,8 +36,14 @@ const App = () => {
 */
 
 // self closing tag, using imported component
+// pass in the props of headerText as an object with the value 'Albums!'
+
+// tag must be nested because only 1 tag can be returned, nest everything in view
 const App = () => (
-  <Header />
+  <View>
+    <Header headerText={'Albumz!'}/>
+    <AlbumList />
+  </View>
 );
 
 
