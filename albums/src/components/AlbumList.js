@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { ScrollView } from 'react-native';
 import axios from 'axios';
 import AlbumDetail from './AlbumDetail';
 
@@ -44,7 +44,6 @@ class AlbumList extends Component {
 
   // props for parent to child data passing
   // state is update data from events that occurs in the app
-
   state = { albums: [] };
 
   // life cycle method
@@ -69,9 +68,9 @@ class AlbumList extends Component {
   render() {
     console.log(this.state);
     return (
-      <View>
+      <ScrollView>
         {this.renderAlbums()}
-      </View>
+      </ScrollView>
     );
   }
 }

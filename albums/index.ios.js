@@ -40,7 +40,7 @@ const App = () => {
 
 // tag must be nested because only 1 tag can be returned, nest everything in view
 const App = () => (
-  <View>
+  <View style={{flex:1}}>
     <Header headerText={'Albumz!'}/>
     <AlbumList />
   </View>
